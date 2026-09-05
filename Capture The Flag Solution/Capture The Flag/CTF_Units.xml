@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by yepzer on 9/5/2026 1:53:20 PM -->
+<GameData>
+
+	<UnitClasses>
+		<Delete Type="UNITCLASS_SS_COCKPIT" />
+		<Delete Type="UNITCLASS_SS_STASIS_CHAMBER" />
+		<Delete Type="UNITCLASS_SS_ENGINE" />
+		<Delete Type="UNITCLASS_SS_BOOSTER" />
+
+		<Row>
+			<Type>UNITCLASS_CAPTURETHEFLAG_OWNFLAG</Type>
+			<Description>This is your own flag - protect it (CLASS)</Description>
+			<DefaultUnit>UNIT_OWNFLAG</DefaultUnit>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+
+		<Row>
+			<Type>UNITCLASS_CAPTURETHEFLAG_ANYFLAG</Type>
+			<Description>This is an Enemy flag - bring it to your capital</Description>
+			<DefaultUnit>UNIT_ANYFLAG</DefaultUnit>
+		</Row>		
+	</UnitClasses>
+
+	<Units>
+		<Delete type="UNIT_SS_STASIS_CHAMBER" />
+		<Delete type="UNIT_SS_ENGINE" />
+		<Delete type="UNIT_SS_COCKPIT" />
+		<Delete type="UNIT_SS_BOOSTER" />
+
+		<Row>
+			<Class>UNITCLASS_CAPTURETHEFLAG_CLASS</Class>
+			<Type>UNIT_OWNFLAG</Type>
+			<Cost>-1</Cost>
+			<Moves>4</Moves>
+			<NoMaintenance>true</NoMaintenance>
+			<DontShowYields>true</DontShowYields>
+			<Capture>UNITCLASS_CAPTURETHEFLAG_ANYFLAG</Capture>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SPACESHIP_PART</DefaultUnitAI>
+			<Description>Your Flag!</Description>
+			<Civilopedia>This is your own flag</Civilopedia>
+			<Strategy>Keep your flag safe</Strategy>
+			<Help>Protect it</Help>
+			<AdvancedStartCost>-1</AdvancedStartCost>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT_SS_STASIS_CHAMBER</UnitArtInfo>
+			<UnitFlagIconOffset>85</UnitFlagIconOffset>
+			<IconAtlas>BW_ATLAS_2</IconAtlas>
+			<PortraitIndex>38</PortraitIndex>
+			<MoveRate>QUADRUPED</MoveRate>
+		</Row>
+
+		<Row>
+			<Class>UNITCLASS_CAPTURETHEFLAG_ANYFLAG</Class>
+			<Type>UNIT_ANYFLAG</Type>
+			<Cost>-1</Cost>
+			<Moves>4</Moves>
+			<NoMaintenance>true</NoMaintenance>
+			<DontShowYields>true</DontShowYields>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SPACESHIP_PART</DefaultUnitAI>
+			<Description>Captured flag</Description>
+			<Civilopedia>Bring captured flag to your capital to win</Civilopedia>
+			<Strategy>Capture it</Strategy>
+			<Help>Capture this</Help>
+			<AdvancedStartCost>-1</AdvancedStartCost>
+			<CombatLimit>0</CombatLimit>
+			<ProjectPrereq>PROJECT_APOLLO_PROGRAM</ProjectPrereq>
+			<SpaceshipProject>PROJECT_SS_ENGINE</SpaceshipProject>
+			<UnitArtInfo>ART_DEF_UNIT_SS_ENGINE</UnitArtInfo>
+			<UnitFlagIconOffset>86</UnitFlagIconOffset>
+			<IconAtlas>BW_ATLAS_2</IconAtlas>
+			<PortraitIndex>39</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+		</Row>
+		
+	</Units>
+
+</GameData>
