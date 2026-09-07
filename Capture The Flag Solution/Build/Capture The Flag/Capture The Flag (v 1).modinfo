@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e1d06873-8852-4801-b009-bdd06a361519" version="1">
+  <Properties>
+    <Name>Capture The Flag</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Capture Enemy flag units to win</Teaser>
+    <Description>Each player starts with a flag unit, when the first city is created.
+Protect the unit to hinder others to win.
+Capture other flag units to win.
+Bring any one enemy flag unit home.</Description>
+    <Authors>yepzer</Authors>
+    <SpecialThanks>whoward69</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://https://github.com/jesperottosen/Civ5Mod-CaptureTheFlag</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="825D0C23DBD40DBC878A549202DBE3C9" import="0">CTF_Units.xml</File>
+    <File md5="A88EB7B67E51C8E90C737766E2173F67" import="0">CTF_Victories.xml</File>
+    <File md5="5264778BFA669B2F4452CA53CD5921B7" import="0">CTF_RemoveSpace.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>CTF_Units.xml</UpdateDatabase>
+      <UpdateDatabase>CTF_Victories.xml</UpdateDatabase>
+      <UpdateDatabase>CTF_RemoveSpace.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

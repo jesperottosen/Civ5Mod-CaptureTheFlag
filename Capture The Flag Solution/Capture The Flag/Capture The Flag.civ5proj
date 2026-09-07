@@ -7,20 +7,51 @@
     <Guid>e1d06873-8852-4801-b009-bdd06a361519</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser>Cvilization 5 mod - Capture Enemy flag units to win</Teaser>
-    <Description>Cvilization 5 mod - Capture Enemy flag units to win</Description>
+    <Teaser>Capture Enemy flag units to win</Teaser>
+    <Description>Each player starts with a flag unit, when the first city is created.
+Protect the unit to hinder others to win.
+Capture other flag units to win.
+Bring any one enemy flag unit home.</Description>
     <Authors>yepzer</Authors>
     <SpecialThanks>whoward69</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>false</SupportsMultiplayer>
-    <SupportsHotSeat>false</SupportsHotSeat>
+    <SupportsHotSeat>true</SupportsHotSeat>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>Capture The Flag</AssemblyName>
     <RootNamespace>Capture The Flag</RootNamespace>
     <ModReferences />
     <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Dlc</Type>
+        <Name>Expansion 2 - Brave New World</Name>
+        <Id>6DA07636-4123-4018-B643-6575B4EC336B</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CTF_Units.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CTF_Victories.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CTF_RemoveSpace.xml</FileName>
+      </Action>
+    </ModActions>
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <Homepage>http://https://github.com/jesperottosen/Civ5Mod-CaptureTheFlag</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -39,6 +70,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="CTF_Victories.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CTF_RemoveSpace.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

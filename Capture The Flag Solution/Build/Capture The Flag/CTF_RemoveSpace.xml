@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by yepzer on 9/6/2026 1:17:59 PM -->
+<GameData>
+	<Buildings>
+		<Delete Type="BUILDING_SPACESHIP_FACTORY" />
+	</Buildings>
+
+	<BuildingClasses>
+		<Delete Type="BUILDINGCLASS_SPACESHIP_FACTORY" />
+	</BuildingClasses>
+
+	<Building_ClassesNeededInCity>
+		<Delete BuildingType="BUILDING_SPACESHIP_FACTORY" />
+	</Building_ClassesNeededInCity>
+
+	<Projects>
+		<Delete Type="PROJECT_APOLLO_PROGRAM" />
+	</Projects>
+
+	<Concepts>
+		<Delete Type="CONCEPT_VICTORY_SPACESHIP_PARTS" />
+
+		<Row>
+			<Type>CONCEPT_VICTORY_CAPTURETHEFLAG</Type>
+			<Topic>Capture the Flag Victory</Topic>
+			<Description>A unit capture concept</Description>
+			<Summary>CApture enemy flag units to win</Summary>
+			<AdvisorQuestion>Are you reay for a hunt</AdvisorQuestion>
+			<Advisor>SCIENCE</Advisor>
+			<CivilopediaHeaderType>HEADER_VICTORY</CivilopediaHeaderType>
+		</Row>
+	</Concepts>
+
+	<Concepts_RelatedConcept>
+		<Row>
+			<ConceptType>CONCEPT_VICTORY_CAPITAL_AND_ORIGINAL_CAPITAL</ConceptType>
+			<RelatedConcept>CONCEPT_VICTORY_CAPTURETHEFLAG</RelatedConcept>
+		</Row>
+		<Row>
+			<ConceptType>CONCEPT_VICTORY_VICTORY_DOMINATION</ConceptType>
+			<RelatedConcept>CONCEPT_VICTORY_CAPTURETHEFLAG</RelatedConcept>
+		</Row>
+	</Concepts_RelatedConcept>
+
+	<PostDefines>
+		<Delete Name="SPACE_RACE_TRIGGER_PROJECT" />
+	</PostDefines>
+
+	<Language_en_US>
+		<Delete Tag="TXT_KEY_PROJECT_APOLLO_PROGRAM_PEDIA" />
+		<Delete Tag="TXT_KEY_PROJECT_APOLLO_PROGRAM_STRATEGY" />
+		<Delete Tag="TXT_KEY_VICTORY_SCIENCE_ADV_QUEST" />
+		<Delete Tag="TXT_KEY_VICTORY_SCIENCE_HEADING3_BODY" />
+		<Delete Tag="TXT_KEY_VICTORY_SPACESHIP_ADV_QUEST" />
+		<Delete Tag="TXT_KEY_VICTORY_SPACESHIP_HEADING4_BODY" />
+		<Delete Tag="TXT_KEY_VICTORY_SPACESHIP_HEADING4_TITLE" />
+
+		<Update>
+			<Set Text="Science Victory disabled" />
+			<Where Tag="TXT_KEY_VICTORY_SCIENCE_HEADING3_BODY" />
+		</Update>
+		
+		<Update>
+			<Set Text="There are five paths to victory available to you in Civilization V:[NEWLINE][NEWLINE]Domination Victory[NEWLINE]Capture The Flag Victory[NEWLINE]Cultural Victory[NEWLINE]Diplomatic Victory[NEWLINE]2050 Arrives" />
+			<Where Tag="TXT_KEY_VICTORY_HOWTOWIN_HEADING2_BODY" />
+		</Update>
+
+		<Update>
+			<Set Text="2 free Great Scientists appear near the City where the Wonder was built." />
+			<Where Tag="TXT_KEY_WONDER_HUBBLE_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="There are six types of non-combat units: Settlers, Workers, Work Boats, Great People, Flag units, and Religious Units. Each is critically important to a civilization's success. As the name non-combat would suggest, these units cannot fight. If attacked by an enemy unit while alone in a hex they are automatically captured or destroyed. Therefore it usually makes sense to escort them with a military unit when sending them out into the wilderness." />
+			<Where Tag="TXT_KEY_UNITS_NONCOMBAT_HEADING2_BODY" />
+		</Update>
+
+		<Update>
+			<Set Text="" />
+			<Where Tag="TXT_KEY_TECH_TECHVICTORY_HEADING2_BODY" />
+		</Update>
+
+		<Update>
+			<Set Text="An important technology it allows you to build the [COLOR_POSITIVE_TEXT]Missile Cruiser[ENDCOLOR], a Naval Unit capable of carrying 3 Missiles and spotting enemy Submarines." />
+			<Where Tag="TXT_KEY_TECH_ROBOTICS_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Rocket Artillery[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Helicopter Gunship[ENDCOLOR] military units." />
+			<Where Tag="TXT_KEY_TECH_ROBOTICS_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="An important technology, Rocketry allows you to build the [COLOR_POSITIVE_TEXT]Apollo Program[ENDCOLOR]. Also allows you to build the [COLOR_POSITIVE_TEXT]Rocket Artillery[ENDCOLOR] military unit, and the [COLOR_POSITIVE_TEXT]Mobile SAM[ENDCOLOR], a fast unit specialized in thwarting enemy aircraft." />
+			<Where Tag="TXT_KEY_TECH_ROCKETRY_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="Allows you to build the [COLOR_POSITIVE_TEXT]Nuclear Missile[ENDCOLOR], a frightening weapon that requires [ICON_RES_URANIUM] Uranium, and is capable of destroying units and cities. Also allows you to build the [COLOR_POSITIVE_TEXT]Guided Missile[ENDCOLOR], an inexpensive single-use Unit that can damage enemy Units." />
+			<Where Tag="TXT_KEY_TECH_ADVANCED_BALLISTICS_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="" />
+			<Where Tag="TXT_KEY_TECH_NANOTECHNOLOGY_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="" />
+			<Where Tag="TXT_KEY_TECH_PARTICLE_PHYSICS_HELP" />
+		</Update>
+
+		<Update>
+			<Set Text="" />
+			<Where Tag="TXT_KEY_TECH_SATELLITES_HELP" />
+		</Update>
+		
+	</Language_en_US>
+	
+</GameData>
