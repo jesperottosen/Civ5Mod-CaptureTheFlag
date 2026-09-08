@@ -6,8 +6,8 @@
     <Teaser>Capture Enemy flag units to win</Teaser>
     <Description>Each player starts with a flag unit, when the first city is created.
 Protect the unit to hinder others to win.
-Capture other flag units to win.
-Bring any one enemy flag unit home.</Description>
+Bring any one enemy flag unit home to win.
+TThe Victory condition is considered defeault enabled.</Description>
     <Authors>yepzer</Authors>
     <SpecialThanks>whoward69</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
@@ -29,9 +29,10 @@ Bring any one enemy flag unit home.</Description>
   <References />
   <Blocks />
   <Files>
-    <File md5="825D0C23DBD40DBC878A549202DBE3C9" import="0">CTF_Units.xml</File>
+    <File md5="B558F89229153CE6EA09A9B79F667B0C" import="0">CTF_onCreateFirstCity.lua</File>
+    <File md5="130E1EAE0454E72E60AF10CE08CB0240" import="0">CTF_Units.xml</File>
     <File md5="A88EB7B67E51C8E90C737766E2173F67" import="0">CTF_Victories.xml</File>
-    <File md5="5264778BFA669B2F4452CA53CD5921B7" import="0">CTF_RemoveSpace.xml</File>
+    <File md5="6AA1471170CD6256FA26358DE455C6EB" import="0">CTF_RemoveSpace.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
@@ -40,4 +41,10 @@ Bring any one enemy flag unit home.</Description>
       <UpdateDatabase>CTF_RemoveSpace.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="CTF_onCreateFirstCity.lua">
+      <Name>onCreateFirstCity</Name>
+      <Description>onCreateFirstCity</Description>
+    </EntryPoint>
+  </EntryPoints>
 </Mod>

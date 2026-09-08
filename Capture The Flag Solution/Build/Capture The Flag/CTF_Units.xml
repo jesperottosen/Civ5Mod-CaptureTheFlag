@@ -46,11 +46,11 @@
 			<Help>Protect it</Help>
 			<AdvancedStartCost>-1</AdvancedStartCost>
 			<CombatLimit>0</CombatLimit>
-			<UnitArtInfo>ART_DEF_UNIT_SS_STASIS_CHAMBER</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_GENERAL</UnitArtInfo>
 			<UnitFlagIconOffset>85</UnitFlagIconOffset>
 			<IconAtlas>BW_ATLAS_2</IconAtlas>
 			<PortraitIndex>38</PortraitIndex>
-			<MoveRate>QUADRUPED</MoveRate>
+			<MoveRate>GREAT_PERSON</MoveRate>
 		</Row>
 
 		<Row>
@@ -70,11 +70,11 @@
 			<Help>Capture this</Help>
 			<AdvancedStartCost>-1</AdvancedStartCost>
 			<CombatLimit>0</CombatLimit>
-			<UnitArtInfo>ART_DEF_UNIT_SS_ENGINE</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_GENERAL</UnitArtInfo>
 			<UnitFlagIconOffset>86</UnitFlagIconOffset>
 			<IconAtlas>BW_ATLAS_2</IconAtlas>
 			<PortraitIndex>39</PortraitIndex>
-			<MoveRate>QUADRUPED</MoveRate>
+			<MoveRate>GREAT_PERSON</MoveRate>
 		</Row>
 		
 	</Units>

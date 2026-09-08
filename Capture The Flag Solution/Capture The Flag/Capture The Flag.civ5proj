@@ -10,8 +10,8 @@
     <Teaser>Capture Enemy flag units to win</Teaser>
     <Description>Each player starts with a flag unit, when the first city is created.
 Protect the unit to hinder others to win.
-Capture other flag units to win.
-Bring any one enemy flag unit home.</Description>
+Bring any one enemy flag unit home to win.
+TThe Victory condition is considered defeault enabled.</Description>
     <Authors>yepzer</Authors>
     <SpecialThanks>whoward69</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -52,6 +52,14 @@ Bring any one enemy flag unit home.</Description>
     </ModActions>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
     <Homepage>http://https://github.com/jesperottosen/Civ5Mod-CaptureTheFlag</Homepage>
+    <ModContent>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>onCreateFirstCity</Name>
+        <Description>onCreateFirstCity</Description>
+        <FileName>CTF_onCreateFirstCity.lua</FileName>
+      </Content>
+    </ModContent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -65,6 +73,10 @@ Bring any one enemy flag unit home.</Description>
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="CTF_onCreateFirstCity.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="CTF_Units.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>

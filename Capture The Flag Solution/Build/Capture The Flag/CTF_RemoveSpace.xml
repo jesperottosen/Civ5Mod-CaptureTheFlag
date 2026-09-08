@@ -13,10 +13,12 @@
 		<Delete BuildingType="BUILDING_SPACESHIP_FACTORY" />
 	</Building_ClassesNeededInCity>
 
-	<Projects>
-		<Delete Type="PROJECT_APOLLO_PROGRAM" />
-	</Projects>
-
+	<!-- 
+		<Projects>
+			<Delete Type="PROJECT_APOLLO_PROGRAM" />
+		</Projects>
+	-->
+	
 	<Concepts>
 		<Delete Type="CONCEPT_VICTORY_SPACESHIP_PARTS" />
 
